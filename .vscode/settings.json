@@ -1,0 +1,19 @@
+{
+    "liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "compact",
+            "extensionName": ".css",
+            "savePath": "~/../css"
+        },
+        // You can add more
+        // {
+        //     "format": "compressed",
+        //     "extensionName": ".min.css",
+        //     "savePath": "~/css"
+        // }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "scss/aia-vitality-plus.scss"
+    ]
+}
