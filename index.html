@@ -8,71 +8,346 @@
     <title>AIA Vitality Plus</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="./css/aia-vitality-plus.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="AIA Vitality Plus"></a>
+            <div class="d-flex align-items-center">
+                <a href="#" class="navbar-lang">ไทย</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <a class="nav-link" href="#">AIA Vitality Plus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Rewards</a>
                     </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Earn Points</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acticles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Join AIA Vitality Plus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">ไทย</a>
+                    </li>
             </div>
         </div>
     </nav>
     <!-- /navbar -->
 
     <!-- Header -->
-    <header class="header">
-        <h1>สวัสดี</h1>
-        <h1>Hello</h1>
+    <header class="header header--dark">
+        <picture>
+            <source media="(min-width: 768px)" srcset="./img/bg-header@pc.jpg">
+            <img src="./img/bg-header@mb.jpg" alt="" class="header__bg">
+        </picture>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__text">
+                    <p class="mb-md-4 mb-lg-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                    <p class="font-weight-semibold">Marilyn Morlo<span class="d-block">AIA Vitality Member</span></p>
+                </div>
+                <div class="text-center text-md-left mt-auto">
+                    <a href="" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- /header -->
 
     <!-- Main -->
-    <main class="main"></main>
+    <main class="main main--home">
+
+        <!-- Member menu -->
+        <section class="member-menu">
+            <div class="container">
+                <ul class="member-menu__list">
+                    <li class="member-menu__list-item">
+                        <a href="" class="member-menu__list-link">
+                            <i class="icon-tag"></i>
+                            <h5>Rewards</h5>
+                        </a>
+                    </li>
+                    <li class="member-menu__list-item">
+                        <a href="" class="member-menu__list-link">
+                            <i class="icon-workout-tracker"></i>
+                            <h5>Earn Points</h5>
+                        </a>
+                    </li>
+                    <li class="member-menu__list-item">
+                        <a href="" class="member-menu__list-link">
+                            <i class="icon-user-circle"></i>
+                            <h5>AIA Vitality Plus</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /member menu -->
+
+        <!-- What -->
+        <section class="what">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>What is AIA Vitality ?</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus </p>
+                        <div class="form-row">
+                            <div class="col-auto">
+                                <a href="" class="btn btn-outline-primary">Join AIA Vitality</a>
+                            </div>
+                            <div class="col">
+                                <a href="" class="btn btn-primary">Upgrade to AIA Vitality Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card card-body">
+                            <p class="card-text">"Vitality has helped me to keep
+                                active, keep healthy and learn
+                                about nutrition."</p>
+                            <p class="card-name">JULIE S.<span>VITALITY MEMBER</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /what -->
+
+        <!-- Why -->
+        <section class="why">
+            <div class="container">
+                <h2 class="why__title">Why is AIA Vitality ?</h2>
+                <div class="why__item">
+                    <div class="card card--why">
+                        <div class="card-icon"><img src="./img/why-icon-1.png" alt=""></div>
+                        <div class="card-details">
+                            <h5 class="card-title">Up to 25% Premium Discount</h5>
+                            <p class="card-text">First year premium up to <span>10%</span>
+                                discount. Renewal year premium up to <span>25%</span> discount.</p>
+                        </div>
+                    </div>
+                    <div class="card card--why">
+                        <div class="card-icon"><img src="./img/why-icon-2.png" alt=""></div>
+                        <div class="card-details">
+                            <h5 class="card-title">Enjoy Partner Privileges</h5>
+                            <p class="card-text">Enjoy <span>benefits and rewards</span> on
+                                work-out trackers, gym memberships , healthy food and more.</p>
+                        </div>
+                    </div>
+                    <div class="card card--why">
+                        <div class="card-icon"><img src="./img/why-icon-3.png" alt=""></div>
+                        <div class="card-details">
+                            <h5 class="card-title">Become a healthier you!</h5>
+                            <p class="card-text">Be motivated to live a healthier, longer, better life with <span>Active
+                                    Challenge</span>
+                                and other health assessments to earn points and rewards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /why -->
+
+        <!-- How -->
+        <section class="how">
+            <div class="container">
+                <h2 class="how__title">How to Join AIA Vitality</h2>
+                <ul class="how__list">
+                    <li class="how__list-item">
+                        <div class="how__list-number">
+                            <span>Step</span>
+                            <strong>1</strong>
+                        </div>
+                        <div class="how__list-details">
+                            <h5 class="how__list-title">Buy an AlA Vitality protection</h5>
+                            <p class="how__list-text">Purchase an eligible product and apply for AIA Vitality
+                                membership at the time of the purchase.</p>
+                            <a href="" class="btn btn-primary">Upgrade to AIA Vitality Plus</a>
+                        </div>
+                    </li>
+                    <li class="how__list-item">
+                        <div class="how__list-number">
+                            <span>Step</span>
+                            <strong>2</strong>
+                        </div>
+                        <div class="how__list-details">
+                            <h5 class="how__list-title">Recieve Welcome Email</h5>
+                            <p class="how__list-text">Receive an email confirming your AIA Vitality membership.
+                                This email will be sent to you after your insurance policy is
+                                approved.</p>
+                        </div>
+                    </li>
+                    <li class="how__list-item">
+                        <div class="how__list-number">
+                            <span>Step</span>
+                            <strong>3</strong>
+                        </div>
+                        <div class="how__list-details">
+                            <h5 class="how__list-title">Download AlA Vitality app</h5>
+                            <p class="how__list-text">Create an account, log in, and start earning Vitality Points.</p>
+                            <a href="" class="btn btn-primary">Download</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /how -->
+
+        <!-- Latest Update -->
+        <section class="latest">
+            <div class="container">
+                <h2 class="latest__title">Latest Update</h2>
+                <div class="latest__slider">
+                    <div class="latest__slider-item">
+                        <a href="" class="card card--latest">
+                            <div class="card-img"><img src="./img/latest-1.jpg" alt=""></div>
+                            <div class="card-body">
+                                <h6 class="card-date">12 September 2021</h6>
+                                <h5 class="card-title">AIA Live is back! Stay tuned for the online day of health and
+                                    wellness on this 12 Sep!</h5>
+                                <p class="card-text">AIA Live is back! Stay tuned for the online day of health and
+                                    wellness on this 12 Sep!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="latest__slider-item">
+                        <a href="" class="card card--latest">
+                            <div class="card-img"><img src="./img/latest-2.jpg" alt=""></div>
+                            <div class="card-body">
+                                <h6 class="card-date">12 September 2021</h6>
+                                <h5 class="card-title">AIA Live is back! Stay tuned for the online day of health and
+                                    wellness on this 12 Sep!</h5>
+                                <p class="card-text">AIA Live is back! Stay tuned for the online day of health and
+                                    wellness on this 12 Sep!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="latest__slider-item">
+                        <a href="" class="card card--latest">
+                            <div class="card-img"><img src="./img/latest-3.jpg" alt=""></div>
+                            <div class="card-body">
+                                <h6 class="card-date">12 September 2021</h6>
+                                <h5 class="card-title">AIA Live is back! Stay tuned for the online day of health and
+                                    wellness on this 12 Sep!</h5>
+                                <p class="card-text">AIA Live is back! Stay tuned for the online day of health and
+                                    wellness on this 12 Sep!</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-right"><a href="" class="btn btn-link">See More...</a></div>
+            </div>
+        </section>
+        <!-- /latest update -->
+
+    </main>
     <!-- main -->
 
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center text-lg-left">
+                <h5>CONTACT US</h5>
+                <ul class="list-unstyled">
+                    <li><i class="icon-phone"></i><a href="tel:1581">1581</a></li>
+                    <li><i class="icon-mail"></i><a href="mailto:th.customer@aia.com">th.customer@aia.com</a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <h5>FOLLOW US</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                                src="./img/facebook.png" alt=""></a></li>
+                    <li class="list-inline-item"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                                src="./img/youtube.png" alt=""></a></li>
+                    <li class="list-inline-item"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                                src="./img/line.png" alt=""></a></li>
+                    <li class="list-inline-item"><a href="http://" target="_blank" rel="noopener noreferrer"><img
+                                src="./img/instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="text-center text-lg-right">
+                <h5>DOWNLOAD APP</h5>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/app-icon.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/app-store.png" alt=""></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./img/google-play.png" alt=""></a>
+            </div>
+            <div class="text-center">
+                <p>Copyright © 2021. AIA Group Limited and its subsidiaries or affiliates. All rights reserved.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="">Terms & Conditions</a></li>
+                    <li class="list-inline-item"><a href="">Terms of Use</a></li>
+                    <li class="list-inline-item"><a href="">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <!-- /footer -->
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('.latest__slider').slick({
+                slidesToShow: 3,
+                arrows: true,
+                dots: false,
+                infinite: false,
+                responsive: [{
+
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: true,
+                        centerPadding: '10%',
+                arrows: false,
+                    }
+
+                }]
+            });
+        });
+    </script>
 
 </body>
 

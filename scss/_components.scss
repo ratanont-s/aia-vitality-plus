@@ -1,0 +1,74 @@
+// Cards
+.card{
+
+    // Why
+    &--why{
+        border-radius: 10px;
+        border-width: 0;
+        padding: 10px;
+        .card{
+            &-icon{
+                margin: 0 auto 5px;
+                text-align: center;
+                img{
+                    width: 56px;
+                    height: 56px;
+                    object-fit: contain;
+                }
+            }
+            &-title,&-text{
+                font-size: .93em;
+                text-align: center;
+            }
+            &-text{
+                span{
+                    color: $secondary;
+                }
+            }
+        }
+        @include media-breakpoint-up(lg){
+            flex-direction: row;
+            box-shadow: 3px 3px 6px rgba($black,.16);
+            padding: 14px 14px 14px 0;
+            .card{
+                &-icon{
+                    flex-shrink: 0;
+                    width: 86px;
+                }
+                &-title,&-text{
+                    font-size: 1.06em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    // Latest
+    &--latest{
+        border-radius: 20px 20px 0px 0px;
+        border-width: 0;
+        box-shadow: 3px 3px 6px rgba($black,.16);
+        color: $body-color;
+        .card{
+            &-img{
+                border-radius: inherit;
+                background-color: $primary;
+                img{
+                    width: 100%;
+                    border-radius: inherit;
+                }
+            }
+            &-date{
+                color: $primary;
+                font-weight: 600;
+                text-align: center;
+            }
+            &-title{
+                font-weight: 600;
+            }
+            &-text{
+                font-weight: 300;
+            }
+        }
+    }
+}

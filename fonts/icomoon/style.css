@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?x2y27t');
+  src:  url('fonts/icomoon.eot?x2y27t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?x2y27t') format('truetype'),
+    url('fonts/icomoon.woff?x2y27t') format('woff'),
+    url('fonts/icomoon.svg?x2y27t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\e92d";
+}
+.icon-phone:before {
+  content: "\e92e";
+}
+.icon-dashboard-sold:before {
+  content: "\e900";
+}
+.icon-dashboard:before {
+  content: "\e901";
+}
+.icon-user-circle:before {
+  content: "\e902";
+}
+.icon-user-circle-solid:before {
+  content: "\e903";
+}
+.icon-report-solid:before {
+  content: "\e904";
+}
+.icon-report:before {
+  content: "\e905";
+}
+.icon-tag-solid:before {
+  content: "\e906";
+}
+.icon-tag:before {
+  content: "\e907";
+}
+.icon-target-solid:before {
+  content: "\e908";
+}
+.icon-target:before {
+  content: "\e909";
+}
+.icon-alcohol:before {
+  content: "\e90a";
+}
+.icon-alert:before {
+  content: "\e90b";
+}
+.icon-ask-for-help:before {
+  content: "\e90c";
+}
+.icon-attach:before {
+  content: "\e90d";
+}
+.icon-beer:before {
+  content: "\e90e";
+}
+.icon-blood-sugar:before {
+  content: "\e90f";
+}
+.icon-calendar-retake:before {
+  content: "\e910";
+}
+.icon-camera:before {
+  content: "\e911";
+}
+.icon-cart:before {
+  content: "\e912";
+}
+.icon-cash:before {
+  content: "\e913";
+}
+.icon-checkmark:before {
+  content: "\e914";
+}
+.icon-doffee:before {
+  content: "\e915";
+}
+.icon-doupon:before {
+  content: "\e916";
+}
+.icon-disable:before {
+  content: "\e917";
+}
+.icon-drumstick:before {
+  content: "\e918";
+}
+.icon-earn-Points:before {
+  content: "\e919";
+}
+.icon-emoji-happy:before {
+  content: "\e91a";
+}
+.icon-Emoji-unhappy:before {
+  content: "\e91b";
+}
+.icon-face-id:before {
+  content: "\e91c";
+}
+.icon-fish:before {
+  content: "\e91d";
+}
+.icon-gift:before {
+  content: "\e91e";
+}
+.icon-health-metric:before {
+  content: "\e91f";
+}
+.icon-laptop:before {
+  content: "\e920";
+}
+.icon-nutrition:before {
+  content: "\e921";
+}
+.icon-pin:before {
+  content: "\e922";
+}
+.icon-point:before {
+  content: "\e923";
+}
+.icon-qr-code:before {
+  content: "\e924";
+}
+.icon-setting:before {
+  content: "\e925";
+}
+.icon-snack:before {
+  content: "\e926";
+}
+.icon-steps:before {
+  content: "\e927";
+}
+.icon-submit-report:before {
+  content: "\e928";
+}
+.icon-touch-id:before {
+  content: "\e929";
+}
+.icon-vegetables:before {
+  content: "\e92a";
+}
+.icon-weight:before {
+  content: "\e92b";
+}
+.icon-workout-tracker:before {
+  content: "\e92c";
+}
