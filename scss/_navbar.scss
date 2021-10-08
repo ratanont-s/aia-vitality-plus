@@ -1,0 +1,114 @@
+.navbar {
+    .nav{
+        &-item{
+            &.active{
+                .nav-link{
+                    position: relative;
+                    color: $primary;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        border-bottom: 5px solid $primary;
+                    }
+                }
+            }
+        }
+        &-link{
+            color: $body-color;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        background-color: $white;
+        box-shadow: $box-shadow;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+        padding-bottom: 0;
+        .container{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -0.5rem;
+                right: -0.5rem;
+                bottom: 0;
+                z-index: -1;
+                background-color: $white;
+                border-radius: 0 0 30px 30px;
+                box-shadow: $box-shadow;
+            }
+        }
+        .nav{
+            &-item{
+                &.active{
+                    .nav-link{
+                        &::before{
+                            border-bottom-width: 8px;
+                        }
+                    }
+                }
+            }
+            &-link{
+                padding: 1.5rem 1rem;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .dropdown {
+            &-menu {
+                z-index: -2;
+                .submenu {
+                    display: none;
+                    position: absolute;
+                    left: 100%;
+                    top: -7px;
+                    &-left {
+                        right: 100%;
+                        left: auto;
+                    }
+                }
+                > li {
+                    position: relative;
+                    &:hover {
+                        > .submenu {
+                            display: block;
+                        }
+                    }
+                }
+                .dropdown-menu {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            &:hover{
+                >.dropdown-toggle{
+                    color: $primary;
+                }
+                >.dropdown-menu{
+                    display: block;
+                    margin-top: 0;
+                    >.nav-subitem{
+                        &:hover{
+                            >.subtoggle{
+                                    color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(xl){
+        .nav{
+            &-link{
+                font-size: 1.125em;
+                padding: 1.75rem 1rem;
+            }
+        }
+    }
+}

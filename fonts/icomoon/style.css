@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?x2y27t');
-  src:  url('fonts/icomoon.eot?x2y27t#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?x2y27t') format('truetype'),
-    url('fonts/icomoon.woff?x2y27t') format('woff'),
-    url('fonts/icomoon.svg?x2y27t#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2wapzq');
+  src:  url('fonts/icomoon.eot?2wapzq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2wapzq') format('truetype'),
+    url('fonts/icomoon.woff?2wapzq') format('woff'),
+    url('fonts/icomoon.svg?2wapzq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-line:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e903";
+}
 .icon-mail:before {
   content: "\e92d";
 }
@@ -32,137 +44,137 @@
   content: "\e92e";
 }
 .icon-dashboard-sold:before {
-  content: "\e900";
-}
-.icon-dashboard:before {
-  content: "\e901";
-}
-.icon-user-circle:before {
-  content: "\e902";
-}
-.icon-user-circle-solid:before {
-  content: "\e903";
-}
-.icon-report-solid:before {
   content: "\e904";
 }
-.icon-report:before {
+.icon-dashboard:before {
   content: "\e905";
 }
-.icon-tag-solid:before {
+.icon-user-circle:before {
   content: "\e906";
 }
-.icon-tag:before {
+.icon-user-circle-solid:before {
   content: "\e907";
 }
-.icon-target-solid:before {
+.icon-report-solid:before {
   content: "\e908";
 }
-.icon-target:before {
+.icon-report:before {
   content: "\e909";
 }
-.icon-alcohol:before {
+.icon-tag-solid:before {
   content: "\e90a";
 }
-.icon-alert:before {
+.icon-tag:before {
   content: "\e90b";
 }
-.icon-ask-for-help:before {
+.icon-target-solid:before {
   content: "\e90c";
 }
-.icon-attach:before {
+.icon-target:before {
   content: "\e90d";
 }
-.icon-beer:before {
+.icon-alcohol:before {
   content: "\e90e";
 }
-.icon-blood-sugar:before {
+.icon-alert:before {
   content: "\e90f";
 }
-.icon-calendar-retake:before {
+.icon-ask-for-help:before {
   content: "\e910";
 }
-.icon-camera:before {
+.icon-attach:before {
   content: "\e911";
 }
-.icon-cart:before {
+.icon-beer:before {
   content: "\e912";
 }
-.icon-cash:before {
+.icon-blood-sugar:before {
   content: "\e913";
 }
-.icon-checkmark:before {
+.icon-calendar-retake:before {
   content: "\e914";
 }
-.icon-doffee:before {
+.icon-camera:before {
   content: "\e915";
 }
-.icon-doupon:before {
+.icon-cart:before {
   content: "\e916";
 }
-.icon-disable:before {
+.icon-cash:before {
   content: "\e917";
 }
-.icon-drumstick:before {
+.icon-checkmark:before {
   content: "\e918";
 }
-.icon-earn-Points:before {
+.icon-doffee:before {
   content: "\e919";
 }
-.icon-emoji-happy:before {
+.icon-doupon:before {
   content: "\e91a";
 }
-.icon-Emoji-unhappy:before {
+.icon-disable:before {
   content: "\e91b";
 }
-.icon-face-id:before {
+.icon-drumstick:before {
   content: "\e91c";
 }
-.icon-fish:before {
+.icon-earn-Points:before {
   content: "\e91d";
 }
-.icon-gift:before {
+.icon-emoji-happy:before {
   content: "\e91e";
 }
-.icon-health-metric:before {
+.icon-Emoji-unhappy:before {
   content: "\e91f";
 }
-.icon-laptop:before {
+.icon-face-id:before {
   content: "\e920";
 }
-.icon-nutrition:before {
+.icon-fish:before {
   content: "\e921";
 }
-.icon-pin:before {
+.icon-gift:before {
   content: "\e922";
 }
-.icon-point:before {
+.icon-health-metric:before {
   content: "\e923";
 }
-.icon-qr-code:before {
+.icon-laptop:before {
   content: "\e924";
 }
-.icon-setting:before {
+.icon-nutrition:before {
   content: "\e925";
 }
-.icon-snack:before {
+.icon-pin:before {
   content: "\e926";
 }
-.icon-steps:before {
+.icon-point:before {
   content: "\e927";
 }
-.icon-submit-report:before {
+.icon-qr-code:before {
   content: "\e928";
 }
-.icon-touch-id:before {
+.icon-setting:before {
   content: "\e929";
 }
-.icon-vegetables:before {
+.icon-snack:before {
   content: "\e92a";
 }
-.icon-weight:before {
+.icon-steps:before {
   content: "\e92b";
 }
-.icon-workout-tracker:before {
+.icon-submit-report:before {
   content: "\e92c";
+}
+.icon-touch-id:before {
+  content: "\e92f";
+}
+.icon-vegetables:before {
+  content: "\e930";
+}
+.icon-weight:before {
+  content: "\e931";
+}
+.icon-workout-tracker:before {
+  content: "\e932";
 }

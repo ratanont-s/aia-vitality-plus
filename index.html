@@ -17,12 +17,12 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top font-heading">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="AIA Vitality Plus"></a>
             <div class="d-flex align-items-center">
-                <a href="#" class="navbar-lang">ไทย</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <a href="#" class=" font-weight-bold text-dark d-lg-none">EN</a>
+                <button class="navbar-toggler p-0 text-primary ml-2" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
@@ -30,86 +30,114 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav w-100 justify-content-lg-between">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">หน้าแรก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">AIA Vitality Plus</a>
+                        <a class="nav-link" href="#">เอไอเอ ไวทัลลิตี้ พลัส</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rewards</a>
+                        <a class="nav-link" href="#">สิทธิประโยชน์</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">สะสมคะแนน</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Get Started</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Create Account</a></li>
+                                    <li><a class="dropdown-item" href="">Start earning Vitality Points</a></li>
+                                    <li><a class="dropdown-item" href="">Get rewarded</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Exercise</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Assessements</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Challenges</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Earn Points</a>
+                        <a class="nav-link" href="#">กิจกรรม</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Activities</a>
+                        <a class="nav-link" href="#">บทความ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acticles</a>
+                        <a class="nav-link" href="#">วิดีโอ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Videos</a>
+                        <a class="nav-link" href="#">สนใจเป็นสมาชิก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Join AIA Vitality Plus</a>
+                        <a class="nav-link font-weight-bold d-none d-lg-block" href="#">EN</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold" href="#">ไทย</a>
-                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- /navbar -->
 
     <!-- Header -->
-    <header class="header header--dark">
-        <picture>
-            <source media="(min-width: 768px)" srcset="./img/bg-header@pc.jpg">
-            <img src="./img/bg-header@mb.jpg" alt="" class="header__bg">
-        </picture>
-        <div class="header__content">
-            <div class="container">
-                <div class="header__text">
-                    <p class="mb-md-4 mb-lg-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                        roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. </p>
-                    <p class="font-weight-semibold">Marilyn Morlo<span class="d-block">AIA Vitality Member</span></p>
-                </div>
-                <div class="text-center text-md-left mt-auto">
-                    <a href="" class="btn btn-primary">Join Now</a>
-                </div>
+    <header class="header">
+        <div class="header-slider mb-0 rellax">
+            <div class="header-slider-item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/banners/banner-1_pc.jpg">
+                    <img src="./img/banners/banner-1_sp.jpg" alt="" class="w-100">
+                </picture>
+            </div>
+            <div class="header-slider-item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/banners/banner-1_pc.jpg">
+                    <img src="./img/banners/banner-1_sp.jpg" alt="" class="w-100">
+                </picture>
+            </div>
+            <div class="header-slider-item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/banners/banner-1_pc.jpg">
+                    <img src="./img/banners/banner-1_sp.jpg" alt="" class="w-100">
+                </picture>
             </div>
         </div>
     </header>
     <!-- /header -->
 
     <!-- Main -->
-    <main class="main main--home">
+    <main class="main bg-white position-relative">
 
         <!-- Member menu -->
-        <section class="member-menu">
+        <section class="links">
             <div class="container">
-                <ul class="member-menu__list">
-                    <li class="member-menu__list-item">
-                        <a href="" class="member-menu__list-link">
-                            <i class="icon-tag"></i>
-                            <h5>Rewards</h5>
-                        </a>
+                <ul class="nav justify-content-between nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-tag"></i>รางวัล</a>
                     </li>
-                    <li class="member-menu__list-item">
-                        <a href="" class="member-menu__list-link">
-                            <i class="icon-workout-tracker"></i>
-                            <h5>Earn Points</h5>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-workout-tracker"></i>สะสมคะแนน</a>
                     </li>
-                    <li class="member-menu__list-item">
-                        <a href="" class="member-menu__list-link">
-                            <i class="icon-user-circle"></i>
-                            <h5>AIA Vitality Plus</h5>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-user-circle"></i>เอไอเอ ไวทัลลิตี้ พลัส</a>
                     </li>
                 </ul>
             </div>
@@ -119,31 +147,35 @@
         <!-- What -->
         <section class="what">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h2>What is AIA Vitality ?</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
-                        <p>It has survived not only five centuries, but also the leap into electronic typesetting,
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of
-                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                            software like Aldus </p>
-                        <div class="form-row">
-                            <div class="col-auto">
-                                <a href="" class="btn btn-outline-primary">Join AIA Vitality</a>
+                <div class="what-grid">
+                    <div class="what-details">
+                        <h2>เอไอเอ ไวทัลลิตี้ พลัส คืออะไร?</h2>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua.</p>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+
+                    </div>
+                    <div class="what-card">
+                        <div class="card card-body shadow">
+                            <div class="flex-grow-1 d-flex align-items-center">
+                                <p class="text-center my-3">“สโรชาพงษ์คอมพ์บัตเตอร์<br>
+                                    กิฟท์โดมิโน ทอล์คฮอตดอกพูลเนิร์สเซอรีโก๊ะ ไลน์ดัมพ์เดบิตรีเสิร์ช แบดผลักดันจึ๊ก
+                                    โฮมสตรอเบอรีปาสคาลนายพราน ซาตานรีวิวแพ็ค”</p>
                             </div>
-                            <div class="col">
-                                <a href="" class="btn btn-primary">Upgrade to AIA Vitality Plus</a>
-                            </div>
+                            <p class="text-right mb-0"><strong class="text-secondary d-block">JULIE
+                                    S.</strong><small>VITALITY MEMBER</small></p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card card-body">
-                            <p class="card-text">"Vitality has helped me to keep
-                                active, keep healthy and learn
-                                about nutrition."</p>
-                            <p class="card-name">JULIE S.<span>VITALITY MEMBER</span></p>
+                    <div class="what-actions form-row justify-content-md-center justify-content-lg-start mt-4">
+                        <div class="col-12 col-md-auto mb-3 mb-md-0">
+                            <a href="" class="btn btn-outline-primary btn-block">เข้าร่วม AIA Vitality</a>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <a href="" class="btn btn-primary btn-block">ปรับระดับสู่ AIA Vitality Plus</a>
                         </div>
                     </div>
                 </div>
@@ -153,32 +185,48 @@
 
         <!-- Why -->
         <section class="why">
-            <div class="container">
-                <h2 class="why__title">Why is AIA Vitality ?</h2>
-                <div class="why__item">
-                    <div class="card card--why">
-                        <div class="card-icon"><img src="./img/why-icon-1.png" alt=""></div>
-                        <div class="card-details">
-                            <h5 class="card-title">Up to 25% Premium Discount</h5>
-                            <p class="card-text">First year premium up to <span>10%</span>
-                                discount. Renewal year premium up to <span>25%</span> discount.</p>
+            <div class="container-lg">
+                <h2 class="text-center">ทำไมต้อง<br class="d-md-none"> เอไอเอ ไวทัลลิตี้ พลัส ?</h2>
+                <div class="why-list">
+                    <div class="why-list-item">
+                        <div class="card card-body h-100 shadow-sm">
+                            <div class="d-flex">
+                                <div class="mr-3"><img src="./img/why-icon-1.png" alt=""></div>
+                                <div>
+                                    <h5 class="card-title">ส่วนลดพรีเมี่ยมสูงสุด <span class="text-secondary">25%</span></h5>
+                                    <p class="card-text">เบี้ยประกันภัยปีแรกสูงสุด 10%
+                                        การลดราคา. ต่ออายุเบี้ยประกันปี
+                                        สูงสุด <span class="text-secondary">25%</span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card--why">
-                        <div class="card-icon"><img src="./img/why-icon-2.png" alt=""></div>
-                        <div class="card-details">
-                            <h5 class="card-title">Enjoy Partner Privileges</h5>
-                            <p class="card-text">Enjoy <span>benefits and rewards</span> on
-                                work-out trackers, gym memberships , healthy food and more.</p>
+                    <div class="why-list-item">
+                        <div class="card card-body h-100 shadow-sm">
+                            <div class="d-flex">
+                                <div class="mr-3"><img src="./img/why-icon-2.png" alt=""></div>
+                                <div>
+                                    <h5 class="card-title">เพลิดเพลินกับสิทธิพิเศษ
+                                        ของพันธมิตร</h5>
+                                    <p class="card-text">เพลิดเพลินไปกับสิทธิประโยชน์และ
+                                        ผลตอบแทนบน เครื่องติดตามการ
+                                        ออกกำลังกาย การเป็นสมาชิกยิม
+                                        อาหารเพื่อสุขภาพ และอื่นๆ</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card--why">
-                        <div class="card-icon"><img src="./img/why-icon-3.png" alt=""></div>
-                        <div class="card-details">
-                            <h5 class="card-title">Become a healthier you!</h5>
-                            <p class="card-text">Be motivated to live a healthier, longer, better life with <span>Active
-                                    Challenge</span>
-                                and other health assessments to earn points and rewards.</p>
+                    <div class="why-list-item">
+                        <div class="card card-body h-100 shadow-sm">
+                            <div class="d-flex">
+                                <div class="mr-3"><img src="./img/why-icon-3.png" alt=""></div>
+                                <div>
+                                    <h5 class="card-title">มีสุขภาพดีขึ้น!</h5>
+                                    <p class="card-text">มีแรงจูงใจที่จะมีชีวิตที่มีสุขภาพดี
+                                        ยืนยาว และดีขึ้นด้วย <span class="text-secondary">Active Challenge</span> และการประเมินสุข
+                                        ภาพอื่นๆ เพื่อรับคะแนนและรางวัล</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,41 +237,41 @@
         <!-- How -->
         <section class="how">
             <div class="container">
-                <h2 class="how__title">How to Join AIA Vitality</h2>
-                <ul class="how__list">
-                    <li class="how__list-item">
-                        <div class="how__list-number">
-                            <span>Step</span>
+                <h2 class="text-center mb-4 mb-lg-5">เอไอเอ ไวทัลลิตี้ พลัส<br class="d-md-none"> ต้องทำอย่างไร</h2>
+                <ul class="how-list list-unstyled mb-0">
+                    <li class="how-list-item">
+                        <div class="how-list-number">
+                            <span>ขั้นที่</span>
                             <strong>1</strong>
                         </div>
-                        <div class="how__list-details">
-                            <h5 class="how__list-title">Buy an AlA Vitality protection</h5>
-                            <p class="how__list-text">Purchase an eligible product and apply for AIA Vitality
-                                membership at the time of the purchase.</p>
-                            <a href="" class="btn btn-primary">Upgrade to AIA Vitality Plus</a>
+                        <div class="how-list-details">
+                            <h5>ซื้อ เอไอเอ ไวทัลลิตี้ พลัส โพรเทคชั่น</h5>
+                            <p>ซื้อสินค้าที่ร่วมรายการ ได้รับสิทธิ์ในการสมัครเป็น
+                                เอไอเอ ไวทัลลิตี้ ทันที</p>
+                            <a href="" class="btn btn-primary">ปรับระดับสู่ AIA Vitality Plus</a>
                         </div>
                     </li>
-                    <li class="how__list-item">
-                        <div class="how__list-number">
-                            <span>Step</span>
+                    <li class="how-list-item">
+                        <div class="how-list-number">
+                            <span>ขั้นที่</span>
                             <strong>2</strong>
                         </div>
-                        <div class="how__list-details">
-                            <h5 class="how__list-title">Recieve Welcome Email</h5>
-                            <p class="how__list-text">Receive an email confirming your AIA Vitality membership.
-                                This email will be sent to you after your insurance policy is
-                                approved.</p>
+                        <div class="how-list-details">
+                            <h5>รับอีเมลเข้าร่วม เอไอเอ ไวทัลลิตี้ พลัส</h5>
+                            <p>รับอีเมลยืนยันการเป็นสมาชิกเอไอเอ ไวทัลลิตี้ ของคุณ
+                                อีเมลนี้จะถูกส่งถึงคุณหลังจากกรมธรรม์ประกันของคุณ
+                                ได้รับการอนุมัติ</p>
                         </div>
                     </li>
-                    <li class="how__list-item">
-                        <div class="how__list-number">
-                            <span>Step</span>
+                    <li class="how-list-item">
+                        <div class="how-list-number">
+                            <span>ขั้นที่</span>
                             <strong>3</strong>
                         </div>
-                        <div class="how__list-details">
-                            <h5 class="how__list-title">Download AlA Vitality app</h5>
-                            <p class="how__list-text">Create an account, log in, and start earning Vitality Points.</p>
-                            <a href="" class="btn btn-primary">Download</a>
+                        <div class="how-list-details">
+                            <h5>ดาวน์โหลด แอปพลิเคชัน เอไอเอ ไวทัลลิตี้ พลัส</h5>
+                            <p>สร้างบัญชี เข้าสู่ระบบ และเริ่มรับคะแนน ไวทัลลิตี้</p>
+                            <a href="" class="btn btn-primary">ดาวโหลด</a>
                         </div>
                     </li>
                 </ul>
@@ -234,46 +282,46 @@
         <!-- Latest Update -->
         <section class="latest">
             <div class="container">
-                <h2 class="latest__title">Latest Update</h2>
-                <div class="latest__slider">
-                    <div class="latest__slider-item">
-                        <a href="" class="card card--latest">
+                <h2>Latest Update</h2>
+                <div class="latest-slider">
+                    <div class="latest-slider-item">
+                        <a href="" class="card card-latest">
                             <div class="card-img"><img src="./img/latest-1.jpg" alt=""></div>
                             <div class="card-body">
                                 <h6 class="card-date">12 September 2021</h6>
                                 <h5 class="card-title">AIA Live is back! Stay tuned for the online day of health and
                                     wellness on this 12 Sep!</h5>
                                 <p class="card-text">AIA Live is back! Stay tuned for the online day of health and
-                                    wellness on this 12 Sep!</p>
+                                    wellness on this 12 Sep!<b> ...read more</b></p>
                             </div>
                         </a>
                     </div>
-                    <div class="latest__slider-item">
-                        <a href="" class="card card--latest">
+                    <div class="latest-slider-item">
+                        <a href="" class="card card-latest">
                             <div class="card-img"><img src="./img/latest-2.jpg" alt=""></div>
                             <div class="card-body">
                                 <h6 class="card-date">12 September 2021</h6>
                                 <h5 class="card-title">AIA Live is back! Stay tuned for the online day of health and
                                     wellness on this 12 Sep!</h5>
                                 <p class="card-text">AIA Live is back! Stay tuned for the online day of health and
-                                    wellness on this 12 Sep!</p>
+                                    wellness on this 12 Sep!<b> ...read more</b></p>
                             </div>
                         </a>
                     </div>
-                    <div class="latest__slider-item">
-                        <a href="" class="card card--latest">
+                    <div class="latest-slider-item">
+                        <a href="" class="card card-latest">
                             <div class="card-img"><img src="./img/latest-3.jpg" alt=""></div>
                             <div class="card-body">
                                 <h6 class="card-date">12 September 2021</h6>
                                 <h5 class="card-title">AIA Live is back! Stay tuned for the online day of health and
                                     wellness on this 12 Sep!</h5>
                                 <p class="card-text">AIA Live is back! Stay tuned for the online day of health and
-                                    wellness on this 12 Sep!</p>
+                                    wellness on this 12 Sep!<b> ...read more</b></p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="text-right"><a href="" class="btn btn-link">See More...</a></div>
+                <div class="text-right"><a href="" class="btn text-secondary">อ่านเพิ่มเติม...</a></div>
             </div>
         </section>
         <!-- /latest update -->
@@ -327,9 +375,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="./js/aia-vitality-plus.js"></script>
     <script>
         $(function () {
-            $('.latest__slider').slick({
+            $('.header-slider').slick({
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                speed: 1000,
+                cssEase: 'cubic-bezier(0.65, 0, 0.35, 1)',
+            });
+            $('.why-list').slick({
+                slidesToShow: 3,
+                arrows: false,
+                dots: false,
+                infinite: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '20px',
+                        }
+                    }]
+            });
+            $('.latest-slider').slick({
                 slidesToShow: 3,
                 arrows: true,
                 dots: false,
@@ -341,7 +416,7 @@
                         slidesToShow: 1,
                         centerMode: true,
                         centerPadding: '10%',
-                arrows: false,
+                        arrows: false,
                     }
 
                 }]
