@@ -1,7 +1,12 @@
 .header {
     &-slider {
         &-img {
-            width: 100%;
+            position: relative;
+            z-index: -1;
+
+            img {
+                width: 100%;
+            }
         }
 
         &-item {

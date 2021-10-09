@@ -3302,7 +3302,9 @@ a.text-dark:hover, a.text-dark:focus { color: #13171a !important; }
 
 @media (min-width: 1200px) { .navbar .nav-link { font-size: 1.125em; padding: 1.75rem 1rem; } }
 
-.header-slider-img { width: 100%; }
+.header-slider-img { position: relative; z-index: -1; }
+
+.header-slider-img img { width: 100%; }
 
 .header-slider-item { position: relative; }
 
