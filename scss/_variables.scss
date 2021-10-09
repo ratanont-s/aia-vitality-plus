@@ -4,6 +4,9 @@ $primary-light: #FFE6E9;
 $secondary: #1F78AD;
 $dark: #333D47;
 $light: #F7F7F9;
+$black: #000000;
+$white: #ffffff;
+$brown-light: #D3CAC3;
 
 // Options
 $enable-shadows: true;
@@ -29,6 +32,10 @@ $headings-font-weight: 600;
 
 // Components
 $border-radius: 0.625rem;
+
+$box-shadow-sm: 0 3px 6px rgba($black, .16);
+$box-shadow: 0 3px 15px rgba($black, .16);
+// $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 // Buttons + Forms
 $input-btn-padding-y: .5rem;

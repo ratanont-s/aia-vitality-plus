@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top font-heading">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt="AIA Vitality Plus"></a>
+            <a class="navbar-brand" href="/"><img src="./img/logo.svg" alt="AIA Vitality Plus"></a>
             <div class="d-flex align-items-center">
                 <a href="#" class=" font-weight-bold text-dark d-lg-none">EN</a>
                 <button class="navbar-toggler p-0 text-primary ml-2" type="button" data-toggle="offcanvas">
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#">หน้าแรก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">เอไอเอ ไวทัลลิตี้ พลัส</a>
+                        <a class="nav-link" href="aia-vitality-plus.html">เอไอเอ ไวทัลลิตี้ พลัส</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">สิทธิประโยชน์</a>
@@ -246,9 +246,9 @@
 
         <!-- Why -->
         <section class="why">
-            <div class="container-lg">
+            <div class="container-lg px-0 px-lg-3">
                 <h2 class="text-center">ทำไมต้อง<br class="d-md-none"> เอไอเอ ไวทัลลิตี้ พลัส ?</h2>
-                <div class="why-list">
+                <div class="why-list slick-h100 slick-multiple-items">
                     <div class="why-list-item">
                         <div class="card card-body h-100 shadow-sm">
                             <div class="d-flex">
@@ -347,8 +347,8 @@
             <div class="container">
                 <h2>Latest Update</h2>
             </div>
-            <div class="container-lg">
-                <div class="latest-slider">
+            <div class="container-lg px-0 px-lg-3">
+                <div class="latest-slider slick-h100 slick-multiple-items">
                     <div class="latest-slider-item">
                         <a href="" class="card card-latest">
                             <div class="card-img"><img src="./img/latest-1.jpg" alt=""></div>
@@ -534,6 +534,7 @@
                         slidesToShow: 1,
                         centerMode: true,
                         centerPadding: '20px',
+                        infinite: true,
                     }
                 }]
             });
@@ -549,6 +550,7 @@
                         centerMode: true,
                         centerPadding: '10%',
                         arrows: false,
+                        infinite: true,
                     }
                 }]
             });
