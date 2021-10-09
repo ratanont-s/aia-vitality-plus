@@ -87,6 +87,27 @@
 
 // Slick
 .slick {
+    &-dots {
+        bottom: .625rem;
+
+        li {
+
+            button {
+                &::before {
+                    font-size: 10px;
+                    color: $white;
+                    opacity: 1;
+                }
+            }
+
+            &.slick-active {
+                button::before {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
     &-arrow {
         width: 1.5rem;
         height: 1.5rem;
@@ -111,6 +132,12 @@
 
         &::before {
             content: '\f285';
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &-dots {
+            bottom: 1.75rem;
         }
     }
 }

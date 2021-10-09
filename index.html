@@ -509,13 +509,18 @@
             $('.header-slider').slick({
                 arrows: false,
                 dots: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 6000,
                 pauseOnFocus: false,
                 pauseOnHover: false,
                 speed: 1000,
                 cssEase: 'cubic-bezier(0.65, 0, 0.35, 1)',
             });
+            var headerContentH = $('.header-slider-overlay').height();
+            if ($(window).width() < 992) {
+                $('.header-slider .slick-dots').css('bottom', headerContentH + 10 + 'px');
+            }
+
             $('.why-list').slick({
                 slidesToShow: 3,
                 arrows: false,

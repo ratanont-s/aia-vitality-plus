@@ -3431,6 +3431,12 @@ main .latest-slider-item { padding: .625rem .625rem 1.5rem; }
 
 .card-latest .card-text b { font-weight: 500; }
 
+.slick-dots { bottom: .625rem; }
+
+.slick-dots li button::before { font-size: 10px; color: #fff; opacity: 1; }
+
+.slick-dots li.slick-active button::before { color: #D31145; }
+
 .slick-arrow { width: 1.5rem; height: 1.5rem; }
 
 .slick-arrow::before { font-family: bootstrap-icons; color: #333D47; font-size: 1.5rem; }
@@ -3442,6 +3448,8 @@ main .latest-slider-item { padding: .625rem .625rem 1.5rem; }
 .slick-next { right: -2rem; }
 
 .slick-next::before { content: '\f285'; }
+
+@media (min-width: 992px) { .slick-dots { bottom: 1.75rem; } }
 
 .font-heading { font-family: "Noto Sans Thai", "AIA Everest" !important; }
 
