@@ -1,4 +1,121 @@
-.footer{
+.footer {
     background-color: $dark;
     color: $white;
+    padding-top: 2.875rem;
+
+    a {
+        display: inline-block;
+        color: inherit;
+    }
+
+    &-contact {
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                margin-left: 0.5rem;
+
+                strong {
+                    font-size: 2.5em;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+    &-download {
+        display: grid;
+        grid-template-areas: 'title title''icon ios''icon android';
+        grid-column-gap: 1rem;
+        align-items: center;
+
+        &-title {
+            grid-area: title;
+        }
+
+        &-icon {
+            grid-area: icon;
+            justify-self: flex-end;
+        }
+
+        &-ios {
+            grid-area: ios;
+        }
+
+        &-android {
+            grid-area: android;
+        }
+    }
+
+    &-socials {
+        font-size: 2.1875em;
+    }
+
+    &-copyright {
+        border-top: 1px solid $text-muted;
+        padding: 1rem 0;
+
+        ul {
+            li:not(:last-child) {
+                position: relative;
+                padding-right: 1rem;
+
+                &::before {
+                    content: '|';
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &-dowload {
+
+            &-ios,
+            &-android {
+                justify-self: flex-start;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &-contact {
+            li {
+                justify-content: flex-start;
+            }
+        }
+
+        &-download {
+            grid-template-areas: 'title title icon''ios android icon';
+
+            &-ios,
+            &-android {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &-contact {
+            li {
+                align-items: flex-start;
+
+                i {
+                    font-size: 1.25em;
+                }
+
+                a {
+                    strong {
+                        font-size: 5em;
+                    }
+                }
+            }
+        }
+    }
 }

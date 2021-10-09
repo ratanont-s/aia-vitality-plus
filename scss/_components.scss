@@ -1,71 +1,116 @@
 // Dropdowns
-.dropdown{
-    &-toggle{
-        &::after{
+.dropdown {
+    &-toggle {
+        &::after {
             content: "\f282"; // [Up: "\f286", Left: "\f284", Right: "\f285"]
             font-family: bootstrap-icons;
             border-width: 0;
             vertical-align: middle;
         }
     }
-    &-menu{
+
+    &-menu {
         border-bottom: 5px solid $primary;
     }
-    &-item{
-        &.subtoggle{
+
+    &-item {
+        &.subtoggle {
             position: relative;
             display: grid;
             grid-template-columns: 1fr auto;
             grid-column-gap: 1.5rem;
-            &::after{
+
+            &::after {
                 content: '\f285';
                 font-family: bootstrap-icons;
             }
         }
     }
-    
-    @include media-breakpoint-down(md){
-        &.show{
-            .dropdown-toggle::after{
-                    content: '\f286';
+
+    @include media-breakpoint-down(md) {
+        &.show {
+            .dropdown-toggle::after {
+                content: '\f286';
             }
         }
     }
-    @include media-breakpoint-up(lg){
-        &:hover{
-            .dropdown-toggle::after{
-                    content: '\f286';
+
+    @include media-breakpoint-up(lg) {
+        &:hover {
+            .dropdown-toggle::after {
+                content: '\f286';
             }
         }
     }
 }
 
 // Cards
-.card{
+.card {
+
     // Latest
-    &-latest{
+    &-latest {
         border-radius: 1.25rem 1.25rem 0 0;
         color: $body-color;
         box-shadow: $box-shadow;
-        .card{
-            &-img{
+        font-family: $headings-font-family;
+
+        .card {
+            &-img {
                 border-radius: inherit;
                 background-color: $primary;
                 background-clip: border-box;
-                height: 242px;
-                img{
+
+                img {
                     border-radius: inherit;
                     width: 100%;
                 }
             }
-            &-date{
+
+            &-date {
                 text-align: center;
                 font-weight: 500;
                 color: $primary;
             }
-            &-title{
+
+            &-title {
                 font-weight: 500;
             }
+
+            &-text {
+                b {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+// Slick
+.slick {
+    &-arrow {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &::before {
+            font-family: bootstrap-icons;
+            color: $body-color;
+            font-size: 1.5rem;
+        }
+    }
+
+    &-prev {
+        left: -2rem;
+
+        &::before {
+            content: '\f284';
+        }
+    }
+
+    &-next {
+        right: -2rem;
+
+        &::before {
+            content: '\f285';
         }
     }
 }

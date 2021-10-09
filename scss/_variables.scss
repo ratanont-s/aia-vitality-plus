@@ -13,14 +13,18 @@ $enable-responsive-font-sizes: true;
 $body-color: $dark;
 
 // Fonts
-$font-family-base: 'Noto Sans Thai','Open Sans';
+$font-family-base: 'Noto Sans Thai',
+'Open Sans';
 
 // Dropdowns
 $dropdown-border-width: 0;
 $dropdown-border-radius: 0;
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg: transparent;
 
 // Headings
-$headings-font-family: 'Noto Sans Thai','AIA Everest';
+$headings-font-family: 'Noto Sans Thai',
+'AIA Everest';
 $headings-font-weight: 600;
 
 // Components
@@ -37,4 +41,3 @@ $card-border-width: 0;
 
 // Links
 $link-hover-decoration: none;
-
