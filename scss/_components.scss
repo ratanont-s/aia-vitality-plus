@@ -7,6 +7,10 @@
             border-width: 0;
             vertical-align: middle;
         }
+
+        &[aria-expanded="true"] {
+            color: $primary;
+        }
     }
 
     &-menu {
@@ -28,9 +32,25 @@
     }
 
     @include media-breakpoint-down(md) {
+        &-item {
+            @include hover-focus() {
+                color: inherit;
+            }
+        }
+
         &.show {
             .dropdown-toggle::after {
                 content: '\f286';
+            }
+        }
+
+        .subtoggle {
+            &.open {
+                color: $primary;
+
+                &::after {
+                    content: '\f286';
+                }
             }
         }
     }

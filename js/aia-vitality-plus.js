@@ -11,9 +11,11 @@ $(function () {
       console.log("Click subtoggle");
       if ($(this).next(".submenu").length) {
         $(this).next(".submenu").toggle();
+        $(this).toggleClass("open");
       }
       $(".dropdown").on("hide.bs.dropdown", function () {
         $(this).find(".submenu").hide();
+        $(this).find(".subtoggle").removeClass("open");
       });
     });
   }
