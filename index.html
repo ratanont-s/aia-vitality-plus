@@ -519,6 +519,8 @@
             var headerContentH = $('.header-slider-overlay').height();
             if ($(window).width() < 992) {
                 $('.header-slider .slick-dots').css('bottom', headerContentH + 10 + 'px');
+            } else {
+                $('.header-slider .slick-dots').css('bottom', '1.75rem');
             }
 
             $('.why-list').slick({
