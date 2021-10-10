@@ -266,3 +266,20 @@
         }
     }
 }
+
+// Navs
+.nav {
+    &-tabs {
+        .nav {
+            &-link {
+                color: $body-color;
+                font-weight: 500;
+                border-bottom: 8px solid transparent;
+
+                &.active {
+                    border-bottom-color: $secondary;
+                }
+            }
+        }
+    }
+}

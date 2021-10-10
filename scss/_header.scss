@@ -38,8 +38,28 @@
             align-items: center;
         }
     }
-    &-page{
-        background: url('../img/bg-header-page.jpg') no-repeat right center/cover;
+
+    &-page {
+        position: relative;
+
+        &-bg {
+            img {
+                height: 132px;
+                width: 100%;
+                object-fit: cover;
+                object-position: right center;
+            }
+        }
+
+        &-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+        }
     }
 
     @include media-breakpoint-down(md) {
@@ -48,12 +68,9 @@
                 background-color: $light;
             }
         }
-        &-page{
+
+        &-page {
             margin-top: 60px;
-            height: 132px;
-            padding: 1.5rem 0;
-            display: flex;
-            align-items: center;
         }
     }
 
@@ -75,6 +92,18 @@
         }
 
         &-img {
+            &-overlay {
+                top: 72px;
+            }
+        }
+
+        &-page {
+            &-bg {
+                img {
+                    height: 262px;
+                }
+            }
+
             &-overlay {
                 top: 72px;
             }

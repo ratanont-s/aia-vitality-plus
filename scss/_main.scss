@@ -197,4 +197,27 @@ main {
             }
         }
     }
+
+    // Rewards
+    .rewards {
+        &-aia-vitality {
+            &-plus {
+                background-color: rgba($primary, .25);
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            &-slider {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+            }
+        }
+
+        @include media-breakpoint-up(xl) {
+            &-slider {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
 }
