@@ -3522,7 +3522,7 @@ main .rewards-aia-vitality-plus { background-color: rgba(211, 17, 69, 0.25); }
 
 .nav-filter .nav-link.active { border-bottom-color: #1F78AD; }
 
-.pagination { font-family: "Noto Sans Thai", "AIA Everest"; font-weight: bold; font-size: 1.25em; }
+.pagination { font-family: "Noto Sans Thai", "AIA Everest"; font-weight: bold; }
 
 .pagination .page-item:first-child .page-link { border-radius: 0; }
 
