@@ -326,6 +326,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="./js/aia-vitality-plus.js"></script>
     <script>
         // filter functions
@@ -369,11 +370,13 @@
             }
             isIsotopeInit = true;
             // filter isotope
-            $grid.isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'fitRows',
-                // use filterFns
-                filter: filterFns[hashFilter] || hashFilter
+            $grid.imagesLoaded().progress(function () {
+                $grid.isotope({
+                    itemSelector: '.grid-item',
+                    layoutMode: 'fitRows',
+                    // use filterFns
+                    filter: filterFns[hashFilter] || hashFilter
+                });
             });
             // set selected class on button
             if (hashFilter) {
