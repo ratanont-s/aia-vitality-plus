@@ -282,4 +282,48 @@
             }
         }
     }
+
+    &-filter {
+        .nav {
+            &-link {
+                font-family: $headings-font-family;
+                font-size: 1.25em;
+                color: $secondary;
+                border-bottom: 8px solid transparent;
+
+                &.active {
+                    border-bottom-color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+// Pagination
+.pagination {
+    font-family: $headings-font-family;
+    font-weight: bold;
+    font-size: 1.25em;
+
+    .page {
+        &-item {
+            &:first-child {
+                .page-link {
+                    border-radius: 0;
+                }
+            }
+
+            &:last-child {
+                .page-link {
+                    border-radius: 0;
+                }
+            }
+
+            &.active {
+                .page-link {
+                    border-bottom: 4px solid $primary;
+                }
+            }
+        }
+    }
 }
