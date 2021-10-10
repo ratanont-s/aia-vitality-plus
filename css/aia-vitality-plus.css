@@ -3425,7 +3425,7 @@ main .rewards-aia-vitality-plus { background-color: rgba(211, 17, 69, 0.25); }
 
 .footer-copyright ul li:not(:last-child)::before { content: '|'; position: absolute; right: 0; }
 
-@media (max-width: 767.98px) { .footer-dowload-ios, .footer-dowload-android { justify-self: flex-start; } }
+@media (max-width: 767.98px) { .footer-download-ios, .footer-download-android { justify-self: flex-start; } }
 
 @media (min-width: 768px) { .footer-contact li { justify-content: flex-start; }
   .footer-download { grid-template-areas: "title title icon" "ios android icon"; }
