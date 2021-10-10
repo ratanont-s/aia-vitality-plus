@@ -18,10 +18,10 @@
         }
     }
 
-    &-page {
+    &-img {
         position: relative;
 
-        &-img {
+        &-bg {
             img {
                 width: 100%;
             }
@@ -38,12 +38,22 @@
             align-items: center;
         }
     }
+    &-page{
+        background: url('../img/bg-header-page.jpg') no-repeat right center/cover;
+    }
 
     @include media-breakpoint-down(md) {
         &-slider {
             &-overlay {
                 background-color: $light;
             }
+        }
+        &-page{
+            margin-top: 60px;
+            height: 132px;
+            padding: 1.5rem 0;
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -64,7 +74,7 @@
             }
         }
 
-        &-page {
+        &-img {
             &-overlay {
                 top: 72px;
             }
