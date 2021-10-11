@@ -124,6 +124,10 @@
                 }
             }
         }
+    }
+
+    &-hover{
+        @include transition($transition-base);
         @include media-breakpoint-up(lg){
             &:hover{
                 transform: scale(1.025);

@@ -3476,7 +3476,11 @@ main .rewards-aia-vitality-plus { background-color: rgba(211, 17, 69, 0.25); }
 
 .card-latest .card-text b { font-weight: 500; }
 
-@media (min-width: 992px) { .card-latest:hover { -webkit-transform: scale(1.025); transform: scale(1.025); } }
+.card-hover { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+@media (prefers-reduced-motion: reduce) { .card-hover { -webkit-transition: none; transition: none; } }
+
+@media (min-width: 992px) { .card-hover:hover { -webkit-transform: scale(1.025); transform: scale(1.025); } }
 
 .slick-dots { bottom: .625rem; }
 
@@ -3551,4 +3555,6 @@ main .rewards-aia-vitality-plus { background-color: rgba(211, 17, 69, 0.25); }
 .font-weight-medium { font-weight: 500; }
 
 .font-weight-semibold { font-weight: 600; }
+
+@media (max-width: 991.98px) { body.offcanvas-open { overflow: hidden; } }
 /*# sourceMappingURL=aia-vitality-plus.css.map */
