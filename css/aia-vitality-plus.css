@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-@font-face { font-family: 'AIA Everest'; src: url("../fonts/AIAEverest-ExtraBold.woff2") format("woff2"), url("../fonts/AIAEverest-ExtraBold.woff") format("woff"); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'AIA Everest'; src: url("../fonts/AIAEverest-ExtraBold.woff2") format("woff2"), url("../fonts/AIAEverest-ExtraBold.woff") format("woff"); font-weight: 800; font-style: normal; font-display: swap; }
 
 @font-face { font-family: 'AIA Everest Condensed'; src: url("../fonts/AIAEverest-CondensedMedium.woff2") format("woff2"), url("../fonts/AIAEverest-CondensedMedium.woff") format("woff"); font-weight: 500; font-style: normal; font-display: swap; }
 
-@font-face { font-family: 'AIA Everest'; src: url("../fonts/AIAEverest-Bold.woff2") format("woff2"), url("../fonts/AIAEverest-Bold.woff") format("woff"); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'AIA Everest'; src: url("../fonts/AIAEverest-Bold.woff2") format("woff2"), url("../fonts/AIAEverest-Bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
 
 @font-face { font-family: 'AIA Everest Condensed'; src: url("../fonts/AIAEverest-Condensed.woff2") format("woff2"), url("../fonts/AIAEverest-Condensed.woff") format("woff"); font-weight: normal; font-style: normal; font-display: swap; }
 
@@ -3520,7 +3520,7 @@ main .rewards-aia-vitality-plus { background-color: rgba(211, 17, 69, 0.25); }
 
 .list-steps-number { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; }
 
-.list-steps-number strong { font-family: "Noto Sans Thai", "AIA Everest"; font-weight: bold; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; font-size: 5em; line-height: 1.25; position: relative; }
+.list-steps-number strong { font-family: "Noto Sans Thai", "AIA Everest"; font-weight: 700; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; font-size: 5em; line-height: 1.25; position: relative; }
 
 @media (min-width: 992px) { .list-steps-item:not(:last-child) .list-steps-details { min-height: 200px; } }
 
