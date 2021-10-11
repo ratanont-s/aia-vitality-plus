@@ -76,6 +76,9 @@
 
     @include media-breakpoint-up(lg) {
         &-slider {
+            &-img{
+                max-height: calc(100vh - 128px);
+            }
             &-overlay {
                 position: absolute;
                 top: 72px;
