@@ -11,7 +11,8 @@
         &[aria-expanded="true"] {
             color: $primary;
         }
-        @include hover-focus{
+
+        @include hover-focus {
             outline: none;
             box-shadow: none;
         }
@@ -130,10 +131,11 @@
         }
     }
 
-    &-hover{
+    &-hover {
         @include transition($transition-base);
-        @include media-breakpoint-up(lg){
-            &:hover{
+
+        @include media-breakpoint-up(lg) {
+            &:hover {
                 transform: scale(1.025);
             }
         }
@@ -172,6 +174,31 @@
             font-family: bootstrap-icons;
             color: $body-color;
             font-size: 1.5rem;
+        }
+
+        &-circle {
+            @include media-breakpoint-up(lg) {
+                .slick {
+                    &-arrow {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        background-color: #AAADB2;
+                        border-radius: 10rem;
+
+                        &::before {
+                            color: $white;
+                        }
+                    }
+
+                    &-prev {
+                        left: -3rem;
+                    }
+
+                    &-next {
+                        right: -3rem;
+                    }
+                }
+            }
         }
     }
 

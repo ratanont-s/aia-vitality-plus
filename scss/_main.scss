@@ -83,7 +83,7 @@ main {
 
     // How
     .how {
-        .list-steps{
+        .list-steps {
             max-width: 470px;
             margin: 0 auto;
         }
@@ -171,5 +171,10 @@ main {
                 grid-template-columns: repeat(4, 1fr);
             }
         }
+    }
+
+    // Related article
+    .related-article {
+        background-color: rgba($brown-light, .25);
     }
 }
