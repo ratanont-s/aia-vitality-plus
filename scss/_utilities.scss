@@ -3,6 +3,18 @@
     &-shadow {
         text-shadow: 0 3px 6px rgba($black, .16);
     }
+
+    &-facebook {
+        color: $facebook !important;
+    }
+
+    &-line {
+        color: $line !important;
+    }
+
+    &-twitter {
+        color: $twitter !important;
+    }
 }
 
 .font {
