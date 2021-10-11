@@ -3445,6 +3445,8 @@ main .rewards-aia-vitality-plus { background-color: rgba(211, 17, 69, 0.25); }
 
 .dropdown-toggle[aria-expanded="true"] { color: #D31145; }
 
+.dropdown-toggle:hover, .dropdown-toggle:focus { outline: none; -webkit-box-shadow: none; box-shadow: none; }
+
 .dropdown-menu { border-bottom: 5px solid #D31145; }
 
 .dropdown-item.subtoggle { position: relative; display: -ms-grid; display: grid; -ms-grid-columns: 1fr auto; grid-template-columns: 1fr auto; grid-column-gap: 1.5rem; }

@@ -11,6 +11,10 @@
         &[aria-expanded="true"] {
             color: $primary;
         }
+        @include hover-focus{
+            outline: none;
+            box-shadow: none;
+        }
     }
 
     &-menu {
