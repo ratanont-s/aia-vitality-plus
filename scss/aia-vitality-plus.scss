@@ -9,3 +9,11 @@
 
 @import './components';
 @import './utilities';
+
+body{
+    &.offcanvas-open{
+        @include media-breakpoint-down(md){
+            overflow: hidden;
+        }
+    }
+}

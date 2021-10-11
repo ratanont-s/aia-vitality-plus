@@ -11,6 +11,10 @@
         &[aria-expanded="true"] {
             color: $primary;
         }
+        @include hover-focus{
+            outline: none;
+            box-shadow: none;
+        }
     }
 
     &-menu {
@@ -73,16 +77,22 @@
         color: $body-color;
         box-shadow: $box-shadow;
         font-family: $headings-font-family;
+        @include transition($transition-base);
 
         .card {
             &-img {
+                aspect-ratio: 4 / 3;
                 border-radius: inherit;
                 background-color: $primary;
                 background-clip: border-box;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
 
                 img {
-                    border-radius: inherit;
                     width: 100%;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
 
@@ -116,6 +126,15 @@
                 b {
                     font-weight: 500;
                 }
+            }
+        }
+    }
+
+    &-hover{
+        @include transition($transition-base);
+        @include media-breakpoint-up(lg){
+            &:hover{
+                transform: scale(1.025);
             }
         }
     }
@@ -237,6 +256,8 @@
             text-align: center;
 
             strong {
+                font-family: $headings-font-family;
+                font-weight: 700;
                 flex-grow: 1;
                 font-size: 5em;
                 line-height: 1.25;
