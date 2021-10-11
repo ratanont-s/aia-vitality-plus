@@ -21,6 +21,7 @@ $(function () {
   }
 
   $('[data-toggle="offcanvas"]').on("click", function () {
+    $(this).find('i').toggleClass('bi-x')
     $("body").toggleClass("offcanvas-open");
     $(".offcanvas-collapse").toggleClass("open");
   });
