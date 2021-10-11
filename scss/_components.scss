@@ -81,10 +81,14 @@
                 border-radius: inherit;
                 background-color: $primary;
                 background-clip: border-box;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
 
                 img {
-                    border-radius: inherit;
                     width: 100%;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
 
@@ -244,6 +248,8 @@
             text-align: center;
 
             strong {
+                font-family: $headings-font-family;
+                font-weight: bold;
                 flex-grow: 1;
                 font-size: 5em;
                 line-height: 1.25;
