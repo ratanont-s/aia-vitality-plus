@@ -62,6 +62,22 @@
         }
     }
 
+    &-earn-points {
+
+        &-img {
+            img {
+                height: 420px;
+                width: 100%;
+                object-fit: cover;
+                object-position: right center;
+            }
+        }
+    }
+
+    &-get-started {
+        background-color: rgba(#4C4794, .1);
+    }
+
     @include media-breakpoint-down(md) {
         &-slider {
             &-overlay {
@@ -72,13 +88,18 @@
         &-page {
             margin-top: 60px;
         }
+
+        &-earn-points {
+            margin-top: 60px;
+        }
     }
 
     @include media-breakpoint-up(lg) {
         &-slider {
-            &-img{
+            &-img {
                 max-height: calc(100vh - 128px);
             }
+
             &-overlay {
                 position: absolute;
                 top: 72px;
@@ -109,6 +130,26 @@
 
             &-overlay {
                 top: 72px;
+            }
+        }
+
+        &-earn-points {
+            padding: 136px 0 84px;
+            max-height: calc(100vh - 136px);
+
+            .container-lg {
+                position: relative;
+            }
+
+            &-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding-top: 4rem;
+                padding-left: 2rem;
+                display: flex;
             }
         }
     }
