@@ -277,4 +277,20 @@ main {
             }
         }
     }
+
+    // Apps
+    .apps {
+        background-color: rgba(#D3CAC3, .2);
+
+        &-slider {
+            &-item {
+                text-align: center;
+            }
+
+            &-link {
+                display: inline-block;
+                margin: 0 auto;
+            }
+        }
+    }
 }

@@ -94,8 +94,10 @@
                 <div class="text-center py-4 d-lg-none">
                     <h5 class="font-weight-normal mb-3">CONTACT US</h5>
                     <ul class="footer-contact list-unstyled mb-3">
-                        <li class="mb-lg-4"><i class="icon-phone"></i><a href="tel:1581" class="text-dark"><strong>1581</strong></a></li>
-                        <li><i class="icon-mail"></i><a href="mailto:th.customer@aia.com" class="text-dark">th.customer@aia.com</a></li>
+                        <li class="mb-lg-4"><i class="icon-phone"></i><a href="tel:1581"
+                                class="text-dark"><strong>1581</strong></a></li>
+                        <li><i class="icon-mail"></i><a href="mailto:th.customer@aia.com"
+                                class="text-dark">th.customer@aia.com</a></li>
                     </ul>
                     <div class="footer-download">
                         <h5 class="footer-download-title font-weight-normal mb-3">Download App <span
@@ -551,35 +553,33 @@
     <script src="./js/aia-vitality-plus.js"></script>
     <script>
         $(function () {
-            $(function () {
-                $('.rewards-slider').slick({
-                    arrows: false,
-                    dots: false,
-                    infinite: false,
-                    responsive: [{
-                            breakpoint: 9999,
-                            settings: "unslick"
-                        },
-                        {
-                            breakpoint: 992,
-                            settings: {
-                                slidesToShow: 2,
-                                centerMode: true,
-                                centerPadding: '10%',
-                                infinite: true,
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 1,
-                                centerMode: true,
-                                centerPadding: '10%',
-                                infinite: true,
-                            }
+            $('.rewards-slider').slick({
+                arrows: false,
+                dots: false,
+                infinite: false,
+                responsive: [{
+                        breakpoint: 9999,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            centerMode: true,
+                            centerPadding: '10%',
+                            infinite: true,
                         }
-                    ]
-                });
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '10%',
+                            infinite: true,
+                        }
+                    }
+                ]
             });
         });
     </script>

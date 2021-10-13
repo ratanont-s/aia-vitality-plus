@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="th-TH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA Vitality Plus</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/aia-vitality-plus.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top font-heading">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="./img/logo.svg" alt="AIA Vitality Plus"></a>
+            <div class="d-flex align-items-center">
+                <a href="#" class=" font-weight-bold text-dark d-lg-none">EN</a>
+                <button class="navbar-toggler p-0 text-primary ml-2" type="button" data-toggle="offcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse offcanvas-collapse">
+                <ul class="navbar-nav w-100 justify-content-lg-between">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aia-vitality-plus.html">เอไอเอ ไวทัลลิตี้ พลัส</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rewards.html">สิทธิประโยชน์</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">สะสมคะแนน</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Get Started</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Create Account</a></li>
+                                    <li><a class="dropdown-item" href="">Start earning Vitality Points</a></li>
+                                    <li><a class="dropdown-item" href="">Get rewarded</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Exercise</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Assessements</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-subitem">
+                                <a class="dropdown-item subtoggle" href="#">Challenges</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="">Submenu item 1</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 2</a></li>
+                                    <li><a class="dropdown-item" href="">Submenu item 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">กิจกรรม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">บทความ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">วิดีโอ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">สนใจเป็นสมาชิก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold d-none d-lg-block" href="#">EN</a>
+                    </li>
+                </ul>
+                <div class="text-center py-4 d-lg-none">
+                    <h5 class="font-weight-normal mb-3">CONTACT US</h5>
+                    <ul class="footer-contact list-unstyled mb-3">
+                        <li class="mb-lg-4"><i class="icon-phone"></i><a href="tel:1581"
+                                class="text-dark"><strong>1581</strong></a></li>
+                        <li><i class="icon-mail"></i><a href="mailto:th.customer@aia.com"
+                                class="text-dark">th.customer@aia.com</a></li>
+                    </ul>
+                    <div class="footer-download">
+                        <h5 class="footer-download-title font-weight-normal mb-3">Download App <span
+                                class="font-weight-medium">AIA Vitality</span>
+                        </h5>
+                        <div class="footer-download-icon"><img src="./img/app-icon.png" alt=""></div>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="footer-download-ios">
+                            <img src="./img/app-store.png" alt="">
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="footer-download-android">
+                            <img src="./img/google-play.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- Header -->
+    <header class="header header-earn-points header-earning">
+        <div class="container-lg px-0 px-lg-3">
+            <div class="header-earn-points-img"><img src="./img/bg-header-earning.jpg" alt="" class="rellax"></div>
+            <div class="header-earn-points-overlay">
+                <div class="col-lg-8 py-4">
+                    <h1 class="text-center text-lg-left">
+                        <span class="text-primary mr-2 d-none d-lg-inline-block"><i
+                                class="icon-dumbbell"></i></span>Exercise
+                    </h1>
+                    <p>When you become an AIA Vitality
+                        member, you can collect Vitality
+                        Points from
+                        knowing your health and improving
+                        it to earn greater rewards via AIA
+                        Vitality
+                        mobile application.</p>
+                    <div class="text-center text-lg-left">
+                        <a href="" class="btn btn-outline-primary">Find Support Tracker</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- Main -->
+    <main class="main bg-white position-relative">
+
+        <!-- Member menu -->
+        <section class="links links-earn-points">
+            <div class="container">
+                <ul class="nav justify-content-between nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link " href="earn-points-get-started.html"><i class="icon-user-circle"></i>Get
+                            Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="icon-workout-tracker"></i>Exercise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-health-metric"></i>Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="icon-target"></i>Challenges</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /member menu -->
+
+        <!-- How to earn exercise points -->
+        <section class="pt-3">
+            <div class="container">
+                <h2 class="text-center mb-4">How to earn exercise points</h2>
+                <div class="row">
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <div class="card card-body shadow-sm h-100">
+                            <div class="row align-items-center text-lg-center">
+                                <div class="col-4 col-lg-12 text-center">
+                                    <span class="display-1 text-secondary font-heading font-weight-bold">
+                                        <i class="icon-workout-tracker"></i>
+                                    </span>
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title text-primary mb-0 mb-lg-3">Link Trackers</h5>
+                                    <p class="card-text font-heading">Up to <span class="text-secondary">100</span>
+                                        Points
+                                        Per day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <div class="card card-body shadow-sm h-100">
+                            <div class="row align-items-center text-lg-center">
+                                <div class="col-4 col-lg-12 text-center">
+                                    <img src="./img/partner-gyms.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title text-primary mb-0 mb-lg-3">Partner Gyms</h5>
+                                    <p class="card-text font-heading">Up to <span class="text-secondary">100</span>
+                                        Points
+                                        Per day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <div class="card card-body shadow-sm h-100">
+                            <div class="row align-items-center text-lg-center">
+                                <div class="col-4 col-lg-12 text-center">
+                                    <img src="./img/fitness-events.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col">
+                                    <h5 class="card-title text-primary mb-0 mb-lg-3">Fitness Events</h5>
+                                    <p class="card-text font-heading">Up to <span class="text-secondary">1,500</span>
+                                        Points
+                                        Per day</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /How to earn exercise points -->
+
+        <!-- Compatible devices and apps to link with AIA Vitality app. -->
+        <section class="apps">
+            <div class="container">
+                <h2 class="text-center mb-4">Compatible devices and apps to link with AIA Vitality app.</h2>
+                <div class="apps-slider slick-arrow-primary">
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-1.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-2.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-3.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-4.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-5.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-6.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-7.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-8.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-1.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-2.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-3.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-4.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-5.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-6.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-7.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="apps-slider-item">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="apps-slider-link">
+                            <img src="./img/apps/app-icon-8.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Compatible devices and apps to link with AIA Vitality app. -->
+
+        <!-- How to link & sync health devices and apps -->
+        <section>
+            <div class="container">
+                <h2 class="text-center mb-4">How to link & sync health devices and apps</h2>
+                <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or
+                    avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue
+                    pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who
+                    loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally
+                    circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
+                    example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+                    from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no
+                    annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+            </div>
+        </section>
+        <!-- /How to link & sync health devices and apps -->
+
+        <!-- Our partner gyms -->
+        <section class="partner-gyms">
+            <div class="container">
+                <h2 class="text-center mb-4">Our partner gyms</h2>
+                <div class="partner-gyms-slider slick-h100 slick-multiple-items slick-arrow-primary">
+                    <div class="partner-gyms-slider-item">
+                        <a href="" class="card card-body card-hover shadow-sm text-dark h-100">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/brands/medix.png" alt="" width="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-title font-weight-semibold text-shadow">
+                                        <span class="text-secondary">Personal
+                                            Medical Case Management</span>
+                                    </p>
+                                    <p class="card-text">Exclusively for AIA Vitality members holding AIA
+                                        Vitality integrated policy ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-gyms-slider-item">
+                        <a href="" class="card card-body card-hover shadow-sm text-dark h-100">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/brands/major.png" alt="" width="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-title font-weight-semibold text-shadow">
+                                        <span class="text-secondary">100 Baht/ticket</span>
+                                    </p>
+                                    <p class="card-text">Applies to normal seat at any Major Cineplex
+                                        theater, up to 4 tickets per week.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-gyms-slider-item">
+                        <a href="" class="card card-body card-hover shadow-sm text-dark h-100">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/brands/garmin.png" alt="" width="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-title font-weight-semibold text-shadow">
+                                        Up to <span class="text-secondary">30%</span> off
+                                    </p>
+                                    <p class="card-text">Exclusively for AIA Vitality members holding AIA
+                                        Vitality integrated policy ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-gyms-slider-item">
+                        <a href="" class="card card-body card-hover shadow-sm text-dark h-100">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/brands/medklinn.png" alt="" width="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-title font-weight-semibold text-shadow">
+                                        Up to <span class="text-secondary">30%</span> off
+                                    </p>
+                                    <p class="card-text">Purchase through aiavitality.co.th </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-gyms-slider-item">
+                        <a href="" class="card card-body card-hover shadow-sm text-dark h-100">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/brands/logo-placeholder-1.png" alt="" width="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-title font-weight-semibold text-shadow">
+                                        Up to <span class="text-secondary">30%</span> off
+                                    </p>
+                                    <p class="card-text">It is a long established fact that a reader will be
+                                        distracted by the readable content...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="partner-gyms-slider-item">
+                        <a href="" class="card card-body card-hover shadow-sm text-dark h-100">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/brands/logo-placeholder-2.png" alt="" width="100">
+                                </div>
+                                <div class="col-8">
+                                    <p class="card-title font-weight-semibold text-shadow">
+                                        Personal
+                                        Medical Case Management
+                                    </p>
+                                    <p class="card-text">It is a long established fact that a reader will be
+                                        distracted by the readable content...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Our partner gyms -->
+
+    </main>
+    <!-- main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md text-center text-md-left">
+                    <h5 class="font-weight-normal mb-3">CONTACT US</h5>
+                    <ul class="footer-contact list-unstyled mb-5">
+                        <li class="mb-lg-4"><i class="icon-phone"></i><a href="tel:1581"><strong>1581</strong></a></li>
+                        <li><i class="icon-mail"></i><a href="mailto:th.customer@aia.com">th.customer@aia.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto text-center text-md-right">
+                    <div class="footer-download mb-4 mb-lg-5">
+                        <h5 class="footer-download-title font-weight-normal mb-3">Download App <span
+                                class="font-weight-medium">AIA Vitality</span>
+                        </h5>
+                        <div class="footer-download-icon"><img src="./img/app-icon.png" alt=""></div>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="footer-download-ios">
+                            <img src="./img/app-store.png" alt="">
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="footer-download-android">
+                            <img src="./img/google-play.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="footer-socials list-inline">
+                        <li class="list-inline-item">
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                    class="icon-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="icon-line"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="icon-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                                    class="icon-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright small">
+                <div class="row">
+                    <div class="col-xl">
+                        <ul class="list-inline text-center text-xl-left">
+                            <li class="list-inline-item"><a href="">Terms & Conditions</a></li>
+                            <li class="list-inline-item"><a href="">Terms of Use</a></li>
+                            <li class="list-inline-item"><a href="">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-auto">
+                        <p class="mb-0 text-muted text-center">Copyright © 2021. AIA Group Limited and its subsidiaries
+                            or
+                            affiliates.
+                            All rights
+                            reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="./js/aia-vitality-plus.js"></script>
+    <script>
+        $(function () {
+
+            $('.apps-slider').slick({
+                slidesToShow: 8,
+                arrows: true,
+                dots: false,
+                autoplay: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 6,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 3,
+                            arrows: false,
+                        }
+                    }
+                ]
+            });
+
+            $('.partner-gyms-slider').slick({
+                slidesToShow: 3,
+                arrows: true,
+                dots: false,
+                autoplay: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: false,
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -200,6 +200,14 @@
                 }
             }
         }
+
+        &-primary {
+            .slick-arrow {
+                &::before {
+                    color: $primary;
+                }
+            }
+        }
     }
 
     &-prev {
