@@ -337,6 +337,51 @@
             }
         }
     }
+
+    &-icon {
+        list-style: none;
+        padding-left: 0;
+
+        >li {
+            display: grid;
+            grid-template-columns: 76px 1fr;
+            grid-column-gap: 1rem;
+            position: relative;
+            z-index: 2;
+
+            &:not(:last-child)::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: calc(76px / 2);
+                bottom: 0;
+                border-left: 1px dashed $secondary;
+                z-index: -1;
+            }
+        }
+
+        &-block {
+            display: block;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $secondary;
+            border-radius: 10rem;
+            color: $secondary;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            background-color: $white;
+        }
+
+        &-details {
+
+            h5 {
+                padding-top: .5rem;
+            }
+        }
+    }
 }
 
 // Navs

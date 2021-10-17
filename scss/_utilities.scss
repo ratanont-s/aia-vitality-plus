@@ -32,3 +32,19 @@
         }
     }
 }
+
+// Background
+.bg {
+    &-primary {
+        &-20 {
+            background-color: rgba($primary, .2);
+        }
+    }
+}
+
+// Borders
+.border {
+    &-dashed {
+        border-style: dashed;
+    }
+}
