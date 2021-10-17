@@ -3339,7 +3339,8 @@ a.text-dark:hover, a.text-dark:focus { color: #13171a !important; }
   .header-earn-points .container-lg { position: relative; }
   .header-earn-points-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding-top: 4rem; padding-left: 2rem; display: flex; }
   .header-get-started { background-color: rgba(76, 71, 148, 0.1); }
-  .header-earning { background-color: rgba(255, 122, 133, 0.25); } }
+  .header-earning { background-color: rgba(255, 122, 133, 0.25); }
+  .header-assessment { background-color: rgba(76, 71, 148, 0.15); } }
 
 main > section { padding: 2.8125rem 0; }
 
@@ -3435,6 +3436,26 @@ main .apps { background-color: rgba(211, 202, 195, 0.2); }
 main .apps-slider-item { text-align: center; }
 
 main .apps-slider-link { display: inline-block; margin: 0 auto; }
+
+main .online-assessments-include-item { padding-top: .5rem; padding-bottom: .5rem; }
+
+main .online-assessments-include .card { color: #333D47; }
+
+main .online-assessments-include .card-img img { max-width: 100%; margin: o auto; }
+
+main .online-assessments-include .slick-arrow { top: 40%; }
+
+@media (max-width: 991.98px) { main .online-assessments-include .card { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); display: grid; grid-template-columns: 95px 1fr; grid-column-gap: 2rem; position: relative; }
+  main .online-assessments-include .card::before { content: "\f135"; font-family: bootstrap-icons; color: #D31145; position: absolute; right: .5rem; bottom: .25rem; font-size: 2em; line-height: 1; }
+  main .online-assessments-include .card-img { border-radius: 0; } }
+
+@media (min-width: 992px) { main .online-assessments-include .card { background-color: transparent; text-align: center; transition: transform .3s ease; }
+  main .online-assessments-include .card-img { width: 160px; height: 160px; border-radius: 100rem; display: flex; justify-content: center; align-items: center; margin: 0 auto .5rem; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); background-color: #ffffff; }
+  main .online-assessments-include .card-details { transform: translateY(-50%); opacity: 0; transition: transform .3s ease, opacity .3s ease; }
+  main .online-assessments-include .card-title { margin-bottom: 0.5rem; }
+  main .online-assessments-include .card-text { font-size: 0.875em; }
+  main .online-assessments-include .card:hover { transform: scale(1.15); }
+  main .online-assessments-include .card:hover .card-details { transform: translateY(0%); opacity: 1; } }
 
 .footer { background-color: #333D47; color: #ffffff; padding-top: 2.875rem; }
 
@@ -3615,6 +3636,8 @@ main .apps-slider-link { display: inline-block; margin: 0 auto; }
 .font-weight-semibold { font-weight: 600; }
 
 .bg-primary-20 { background-color: rgba(211, 17, 69, 0.2); }
+
+.bg-brown-20 { background-color: rgba(211, 202, 195, 0.2); }
 
 .border-dashed { border-style: dashed; }
 

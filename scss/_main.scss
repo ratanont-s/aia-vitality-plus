@@ -293,4 +293,97 @@ main {
             }
         }
     }
+
+    // online-assessments-include
+    .online-assessments-include {
+        &-item {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        .card {
+            color: $body-color;
+
+            &-img {
+                img {
+                    max-width: 100%;
+                    margin: o auto;
+                }
+            }
+        }
+
+        .slick-arrow {
+            top: 40%;
+        }
+
+        @include media-breakpoint-down(md) {
+            .card {
+                box-shadow: $box-shadow-sm;
+                display: grid;
+                grid-template-columns: 95px 1fr;
+                grid-column-gap: 2rem;
+                position: relative;
+
+                &::before {
+                    content: "\f135";
+                    font-family: bootstrap-icons;
+                    color: $primary;
+                    position: absolute;
+                    right: .5rem;
+                    bottom: .25rem;
+                    font-size: 2em;
+                    line-height: 1;
+                }
+
+                &-img {
+                    border-radius: 0;
+
+
+                }
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            .card {
+                background-color: transparent;
+                text-align: center;
+                transition: transform .3s ease;
+
+                &-img {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 100rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto .5rem;
+                    box-shadow: $box-shadow-sm;
+                    background-color: $white;
+                }
+
+                &-details {
+                    transform: translateY(-50%);
+                    opacity: 0;
+                    transition: transform .3s ease, opacity .3s ease;
+                }
+
+                &-title {
+                    margin-bottom: 0.5rem;
+                }
+
+                &-text {
+                    font-size: 0.875em;
+                }
+
+                &:hover {
+                    transform: scale(1.15);
+
+                    .card-details {
+                        transform: translateY(0%);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
 }
