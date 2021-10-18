@@ -28,7 +28,7 @@
     &-download {
         display: grid;
         grid-template-areas: 'title title''icon ios''icon android';
-        grid-column-gap: 1rem;
+        grid-gap: .5rem 1rem;
         align-items: center;
 
         &-title {
@@ -90,12 +90,12 @@
 
         &-download {
             grid-template-areas: 'title title icon''ios android icon';
+            grid-gap: 0 1rem;
 
             &-ios,
             &-android {
-
                 img {
-                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }

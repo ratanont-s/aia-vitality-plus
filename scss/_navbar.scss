@@ -59,6 +59,19 @@
                 transform: translateX(-100%);
             }
         }
+        .footer{
+            &-contact{
+                li{
+                    justify-content: center;
+                }
+            }
+            &-download {
+                grid-template-areas: 'title title''icon ios''icon android';
+                &-ios,&-android{
+                    justify-self: flex-start;
+                }
+            }
+        }
     }
 
     @include media-breakpoint-up(lg) {
