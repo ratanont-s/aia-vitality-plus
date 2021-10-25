@@ -443,3 +443,15 @@
         }
     }
 }
+
+// Cookie
+.cookie {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $zindex-fixed;
+    background-color: rgba($black, .9);
+    color: $white;
+    padding: 1.5rem 0;
+}
